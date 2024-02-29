@@ -127,8 +127,8 @@ e.MouseButton1Down:connect(
     end
 )
 do
-    if game:GetService("CoreGui"):FindFirstChild("ZekromHubXUI") then
-        game:GetService("CoreGui").ZekromHubXUI:Destroy()
+    if game:GetService("CoreGui"):FindFirstChild("RinXHubUI") then
+        game:GetService("CoreGui").RinXHubUI:Destroy()
         game:GetService("CoreGui").ScreenGui:Destroy()
     end
 end
@@ -144,7 +144,7 @@ function a:Window(f, f, f)
     local f = f or Enum.KeyCode.RightControl
     local f = string.gsub(tostring(f), "Enum.KeyCode.", "")
     local f = Instance.new("ScreenGui")
-    f.Name = "ZekromHubXUI"
+    f.Name = "RinXHubUI"
     f.Parent = game.CoreGui
     f.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     local i = Instance.new("Frame")
@@ -520,7 +520,7 @@ function a:Window(f, f, f)
             )
         end
         local a = {}
-        function a:Button(a, b)
+        function a:AddButton(a, b)
             local d = Instance.new("Frame")
             local e = Instance.new("UICorner")
             local g = Instance.new("TextButton")
@@ -584,7 +584,7 @@ function a:Window(f, f, f)
                 end
             )
         end
-        function a:Toggle(a, b, d)
+        function a:AddToggle(a, b, d)
             b = b or false
             local e = b
             _G.Color = Color3.fromRGB(43, 43, 43)
@@ -682,7 +682,7 @@ function a:Window(f, f, f)
                 pcall(d, e)
             end
         end
-        function a:Dropdown(a, b, d)
+        function a:AddDropdown(a, b, d)
             local e = false
             local g = Instance.new("Frame")
             local h = Instance.new("UICorner")
@@ -884,7 +884,7 @@ function a:Window(f, f, f)
             end
             return b
         end
-        function a:Slider(a, c, d, e, g)
+        function a:AddSlider(a, c, d, e, g)
             local h = {}
             local i = Instance.new("Frame")
             local j = Instance.new("Frame")
@@ -1540,7 +1540,7 @@ function a:Window(f, f, f)
             l.CornerRadius = UDim.new(0, 5)
             l.Parent = k
         end
-        function a:Label(a)
+        function a:AddLabel(a)
             local b = Instance.new("TextLabel")
             local c = Instance.new("UIPadding")
             local d = {}
@@ -1562,7 +1562,7 @@ function a:Window(f, f, f)
             end
             return d
         end
-        function a:Label1(a)
+        function a:AddLabel1(a)
             local b = Instance.new("TextLabel")
             local c = Instance.new("UIPadding")
             local d = {}
@@ -1653,7 +1653,7 @@ function a:Window(f, f, f)
             l.CornerRadius = UDim.new(0, 3)
             l.Parent = k
         end
-        function a:Label(a)
+        function a:AddLabel(a)
             local b = Instance.new("TextLabel")
             local c = Instance.new("UIPadding")
             local d = {}
@@ -1675,7 +1675,7 @@ function a:Window(f, f, f)
             end
             return d
         end
-        function a:Label1(a)
+        function a:AddLabel1(a)
             local b = Instance.new("TextLabel")
             local c = Instance.new("UIPadding")
             local d = {}
@@ -1730,7 +1730,7 @@ function a:Window(f, f, f)
             end
             return e
         end
-        function a:Seperator(a)
+        function a:AddSeperator(a)
             local b = Instance.new("Frame")
             local c = Instance.new("Frame")
             local d = Instance.new("TextLabel")
@@ -1781,7 +1781,7 @@ function a:Window(f, f, f)
             }
             h.Parent = e
         end
-        function a:Line()
+        function a:AddLine()
             local a = Instance.new("Frame")
             local b = Instance.new("Frame")
             local c = Instance.new("UIGradient")
