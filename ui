@@ -1279,7 +1279,7 @@ function a:Window(f, f, f)
             )
             return h
         end
-        function a:Slider2(a, b, c, d, e)
+        function a:AddSlider2(a, b, c, d, e)
             local g = Instance.new("Frame")
             local h = Instance.new("UICorner")
             local i = Instance.new("Frame")
@@ -1471,7 +1471,7 @@ function a:Window(f, f, f)
                 end
             )
         end
-        function a:Textbox(a, b, c)
+        function a:AddTextbox(a, b, c)
             local d = Instance.new("Frame")
             local e = Instance.new("UICorner")
             local g = Instance.new("Frame")
@@ -1584,7 +1584,7 @@ function a:Window(f, f, f)
             end
             return d
         end
-        function a:Textbox(a, b, c)
+        function a:AddTextbox(a, b, c)
             local d = Instance.new("Frame")
             local e = Instance.new("UICorner")
             local g = Instance.new("Frame")
